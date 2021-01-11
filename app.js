@@ -13,7 +13,6 @@ btnSearch.addEventListener("click", function () {
             return;
         }
         let response = xhr.response;
-        console.log(response);
 
         divResume.innerHTML += city + "<br>";
         divResume.innerHTML += "<br>"+"Température : " + Math.ceil(response.main.temp)+"°C" + "<br>";
